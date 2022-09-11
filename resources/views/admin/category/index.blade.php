@@ -6,7 +6,7 @@
     <main>
         <div class="container">
             <div class="justify-content-center">
-                <a href="{{ route('category.create') }}" class="btn btn-primary m-3">Add Product</a>
+                <a href="{{ route('category.create') }}" class="btn btn-primary m-3">Add Category</a>
                 <table class="table" id="yourselector">
                     <thead class="thead-dark">
                     <tr>
