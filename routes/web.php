@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 //    return view('home');
 //});
 
+Route::get('/clear', function() {Artisan::call('optimize:clear'); return "Cache is cleared";});
+
 Route::get('/contact', function () {
     return view('contact');
 });
