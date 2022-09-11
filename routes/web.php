@@ -27,7 +27,7 @@ Route::get('/contact', function () {
 
 Auth::routes();
 Route::resource('order',\App\Http\Controllers\OrderController::class);
-Route::get('/{id}', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/about', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
 Route::get('/detail/edit/{id}', [App\Http\Controllers\HomeController::class, 'detailEdit'])->name('detail.edit');
 
